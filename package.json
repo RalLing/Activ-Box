@@ -1,13 +1,22 @@
 {
-  "name": "worck",
+  "name": "activebox",
   "version": "1.0.0",
-  "description": "",
+  "description": "Activ Box project",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index1.html",
     "build": "parcel build src/index1.html"
+    
   },
-  "author": "",
-  "license": "ISC"
+  "author": "NikitaVisocki",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "sass": "^1.69.7"
+},
+
+  "dependencies": {
+    "parcel": "^2.11.0"
+  }
 }
 
