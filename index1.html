@@ -53,5 +53,30 @@
          </div>
         </section>
       </div>
+      <script>
+          let scrollingElement = document.querySelector('.header');
+          function handleScroll(){
+            var scrollPosition = window.scrollY;
+            if (scrollPosition > 0) {
+            scrollingElement.classList.add('scrolled');
+          } else {
+            scrollingElement.classList.remove('scrolled');
+          }
+}
+window.addEventListener('scroll', handleScroll);
+let menuButton = document.querySelector('.burger-menu');
+        let menu = document.querySelector('.menu');
+        menuButton.addEventListener('click', toggleMenu);
+        function toggleMenu() {
+            menu.classList.toggle('open');
+        }
+        var menuItems = document.querySelectorAll('.menu li');
+        menuItems.forEach(function(item) {
+            item.addEventListener('click', closeMenu);
+        });
+        function closeMenu() {
+            menu.classList.remove('open');
+        }
+      </script>ript
 </body>
 </html>
