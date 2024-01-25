@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index1.html",
+    "build": "parcel build src/index1.html"
   },
   "author": "",
   "license": "ISC"
 }
+
