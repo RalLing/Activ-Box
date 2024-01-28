@@ -4,8 +4,8 @@
   "description": "Activ Box project",
   "main": "index.js",
   "scripts": {
-    "start": "npx parcel src/index1.html",
-    "build": "npx parcel build src/index1.html"
+    "start": "npx parcel Activebox/index1.html",
+    "build": "npx parcel build Activebox/index1.html"
     
   },
   "author": "NikitaVisocki",
