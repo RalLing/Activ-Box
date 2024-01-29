@@ -8,10 +8,11 @@
     "build": "npx parcel build Activebox/index1.html"
     
   },
-  "author": "NikitaVisocki",
+"author": "NikitaVisocki",
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.11.0"
   }
 }
+
 

@@ -13,24 +13,29 @@
     height: auto;
   }
   .header {
-    background-color:transparent;
-    margin: 0 auto;
+    
     position: fixed;
-    width: 1510px;
-    padding: 0 170px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    
   }
-  .header::after {
+  .header__container::after {
     position: absolute;
     content: '';
     bottom: 0;
-    left: 170px;
     border-bottom: 1px solid #fff;
-    width: 1170px;
+    width: calc(100%-30px);
+    left: 15px;
   }
   .header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
   }
   .header__link{
     color: #FFF;
@@ -41,8 +46,7 @@
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    width: 134px;
-    text-align: center;
+    min-width: 134px;
     padding: 36px 0 32px;
     border-bottom: 3px solid transparent;
   }
@@ -66,6 +70,7 @@
       left: 20px;
     }
     .header__link {
+      display:none ;
       width: 112px;
       line-height: 14px;
       font-size: 12px;
@@ -78,8 +83,6 @@
       height: 14.352px;
     }
     .header {
-      width: 280px;
-      padding: 0;
       margin: 0 20px;
     }
     .header__link {
@@ -97,18 +100,18 @@
   
   
   .banner {
-    height: 747px;
     background-color:rgba(37, 43, 73, 0.8);
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
   .banner__container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
   }
   .banner__title {
     color: #FFF;
@@ -128,14 +131,13 @@
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 79.57px;
-    padding: 0 70px;
+    max-width: 1440px;
   }
   .banner__button {
-    max-width: 370px;
-    width: 100%;
+    max-width: 314px;
     padding: 17px;
     border: 1px solid #FF4343;
-      background-color: #FF4343;
+    background-color: #FF4343;
     color: #FFF;
     font-size: 24px;
     font-weight: 900;
@@ -152,14 +154,15 @@
     background-color: transparent;
   }
   
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 320px) {
     .banner {
-      padding: 0 20px;
-      height: 768px;
+      max-width: 63px;
     }
-    .banner__container {
-      max-width: 984px;
-    }
+    .banner__container
+    {
+padding: 0;
+   }
+  
     .banner__title {
       font-size: 48px;
       line-height: 56px;
@@ -172,7 +175,7 @@
       margin-bottom: 89.14px;
     }
     .banner__button {
-      width: 314px;
+      max-width: 314px;
     }
   }
   
