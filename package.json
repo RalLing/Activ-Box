@@ -1,7 +1,8 @@
 {
   "name": "activebox",
   "version": "1.0.0",
-  "description": "Activ Box project",
+  "description": "Activ-Box project",
+  "source": "index1.html",
   "main": "index.js",
   "scripts": {
     "start": "npx parcel Activebox/index1.html",
@@ -11,6 +12,7 @@
 "author": "NikitaVisocki",
   "license": "ISC",
   "dependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
     "parcel": "^2.11.0"
   }
 }
